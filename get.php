@@ -17,6 +17,6 @@ while (true) {
 		$codr = $json->rxpk[0]->codr;
 		$rssi = $json->rxpk[0]->rssi;
 		$size = $json->rxpk[0]->size;
-		}
+	}
 }
 ?>
