@@ -1,4 +1,6 @@
 Es muss die global_conf.json am Gateway angepasst werden um die Daten auch an einen eigenen Server zu schicken z.b.:
+
+```
 [...]
         "gateway_conf": {
                 "gateway_ID": "B8XXXXXX",
@@ -18,6 +20,8 @@ Es muss die global_conf.json am Gateway angepasst werden um die Daten auch an ei
                 ]
         }
 [...]
+```
+
 es scheinen nur DNS Server mit A Rekord oder IPv4 Adressen zu gehen. IPv6 scheint der Packet Forwarder nicht zu fressen.
 
 Auf dem Zielserver können die Pakete dann mit dem PHP Script abgefangen werden und weiter verarbeitet (z.b. in eine influxdb schreiben und mit Grafana anzeigen) werden.
